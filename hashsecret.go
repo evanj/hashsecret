@@ -45,9 +45,9 @@ func main() {
 		}
 
 		lastPhoneNumber = phoneNumber
-		lastHash = hasher.Sum(make([]byte, hasher.BlockSize()))
+		lastHash = hasher.Sum(make([]byte, 0, hasher.BlockSize()))
 	}
 
 	fmt.Println("last number:", lastPhoneNumber)
-	fmt.Printf("last hash (%d bytes): %s", len(lastHash), hex.EncodeToString(lastHash))
+	fmt.Println("last hash:", hex.EncodeToString(lastHash))
 }
