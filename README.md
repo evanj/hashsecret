@@ -13,7 +13,7 @@ Here is [what is known about how Secret stores phone numbers](https://medium.com
 
 I wrote a quick-and-dirty Go program to try and answer this question. I'm assuming Secret uses a standard cryptographic hash. I'll give them the benefit of the doubt and say SHA256, since its one of the slower standard choices. Since the shared salt must be in the client somewhere, I've added an 8 character constant string to the hash to simulate it.
 
-**Time to hash 8 billion numbers**: 2:34:15 (154 minutes, or 9255 seconds)  
+**Time to hash 8 billion numbers**: 2:22:05 (142 minutes, or 8525 seconds)  
 **CPU**: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
 
 
